@@ -15,7 +15,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     private Button profileButton;
     private Button settingsButton;
-    private Button logoutButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         profileButton = findViewById(R.id.profileButton);
         settingsButton = findViewById(R.id.settingsButton);
-        logoutButton = findViewById(R.id.logoutButton);
+
 
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,12 +42,5 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Code to log out the user
-                Toast.makeText(DashboardActivity.this, "Logout Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }
